@@ -14,8 +14,8 @@ def is_enabled(value, default):
     
 # Main
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
+API_ID = int(environ.get('API_ID', '13992749'))
+API_HASH = environ.get('API_HASH', 'c8b1a7c3ce9aa1d1eec2fee774d48399')
 BOT_TOKEN = environ.get('BOT_TOKEN', '')
 PORT = environ.get('PORT', '8082')
 
@@ -35,26 +35,26 @@ LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', ''))
 LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', ''))
 
 # MongoDB 
-DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://King1:King1@cluster0.udffg72.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_NAME = environ.get('DATABASE_NAME', "ravikumar1cn")
 
 # Files index database url
-FILES_DATABASE = environ.get('FILES_DATABASE', "")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'jisshu')
+FILES_DATABASE = environ.get('FILES_DATABASE', "mongodb+srv://King2:King2@cluster0.daup34w.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'ravikumar1cn')
 
 # Other Channel's
-SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1001864434358'))
+SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', ''))
 DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','0'))
-request_channel = environ.get('REQUEST_CHANNEL', '-1001864434358') 
+request_channel = environ.get('REQUEST_CHANNEL', '') 
 REQUEST_CHANNEL = int(request_channel) if request_channel and id_pattern.search(request_channel) else None
-MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1001864434358')) 
+MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '')) 
 
 # Added Link Here Not Id 
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '')
 MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', '')
 
 # Verification
-IS_VERIFY = is_enabled('IS_VERIFY', True)
+IS_VERIFY = is_enabled('IS_VERIFY', False)
 #---------------------------------------------------------------
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/")
 TUTORIAL_2 = environ.get("TUTORIAL_2", "https://t.me/")
